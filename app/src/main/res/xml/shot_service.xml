@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  canRetrieveWindowContent is not optional despite this service never reading content:
+  without it flagRetrieveInteractiveWindows is silently ignored, getWindows() returns
+  empty, and the settle watcher concludes the shade is gone the instant it is asked —
+  producing a screenshot of the Quick Settings panel, with no error anywhere.
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeWindowsChanged|typeWindowStateChanged"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagDefault|flagRetrieveInteractiveWindows"
+    android:canRetrieveWindowContent="true"
+    android:canTakeScreenshot="true"
+    android:description="@string/a11y_description"
+    android:notificationTimeout="0"
+    android:summary="@string/a11y_summary" />

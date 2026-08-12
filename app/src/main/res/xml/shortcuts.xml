@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  targetClass and targetPackage below are literal strings that no build stage rewrites
+  or checks. They resolve only because <activity android:name=".SetupActivity"> in the
+  manifest makes aapt2 emit "-keep class dev.screenclip.SetupActivity { <init>(); }",
+  which pins the name through R8. Never add -repackageclasses, and never add an
+  applicationIdSuffix — either breaks this shortcut with no error and no log line.
+-->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_stat_capture"
+        android:shortcutId="setup"
+        android:shortcutLongLabel="@string/shortcut_setup_long"
+        android:shortcutShortLabel="@string/shortcut_setup">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="dev.screenclip.SetupActivity"
+            android:targetPackage="dev.screenclip" />
+    </shortcut>
+</shortcuts>

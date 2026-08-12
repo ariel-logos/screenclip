@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ScreenClip</string>
+
+    <string name="blurb">Freeze the screen, crop any rectangle, then copy it, save it, or both.</string>
+    <string name="capture">Capture now</string>
+
+    <string name="setup_overlay">Draw over other apps</string>
+    <string name="grant_overlay">Grant \"draw over other apps\"</string>
+    <string name="state_required">Required — the selection is drawn in a window above everything else.</string>
+    <string name="state_on">On.</string>
+    <string name="state_off">Off — capture will ask for recording permission each time.</string>
+
+    <string name="setup_a11y">Instant capture (optional)</string>
+    <string name="a11y_explainer">ScreenClip works without this. Every capture just asks for recording permission first — Android requires that prompt every single time and no app can skip it. Turning this on lets ScreenClip take the shot directly, so there is no prompt at all.\n\nIt is an accessibility service, so Android will show a strong warning when you enable it. ScreenClip uses it only to take the screenshot you asked for.</string>
+    <string name="enable_a11y">Enable instant capture</string>
+    <string name="shortcut_setup">Setup</string>
+    <string name="shortcut_setup_long">ScreenClip setup</string>
+    <string name="reachable_later">You can come back here any time: long-press the app icon, or long-press the Quick Settings tile.</string>
+    <string name="a11y_hint">Find ScreenClip in the list and turn it on. If the switch is greyed out, go to Settings › Apps › ScreenClip › ⋮ › Allow restricted settings — that menu item only appears after you have tapped the greyed-out switch once.</string>
+
+    <string name="setup_tile">Quick Settings tile</string>
+    <string name="tile_note">Android has no way to ask whether the tile is currently in your Quick Settings, so these are two separate buttons rather than one switch. Removing hides it from Quick Settings and from the tile picker.</string>
+    <string name="add_tile">Add to Quick Settings</string>
+    <string name="remove_tile">Remove from Quick Settings</string>
+    <string name="tile_added">Tile added</string>
+    <string name="tile_removed">Tile removed from Quick Settings</string>
+    <string name="disable_a11y">Turn off instant capture</string>
+    <string name="a11y_turned_off">Instant capture off — captures will ask for permission again</string>
+    <string name="tile_manual">Add it by hand: pull down Quick Settings, tap edit, drag ScreenClip in.</string>
+    <string name="tile_label">ScreenClip</string>
+    <string name="tile_instant">Instant</string>
+    <string name="tile_prompts">Asks permission</string>
+
+    <string name="a11y_label">ScreenClip instant capture</string>
+    <string name="a11y_summary">Lets ScreenClip capture the screen without a permission prompt every time.</string>
+    <string name="a11y_description">ScreenClip uses this only to take the screenshot you asked for, and to notice when the Quick Settings panel has finished closing so it is not captured by mistake. It does not read screen content and does not run in the background.</string>
+
+    <string name="overlay_hint">Drag to select</string>
+    <string name="notif_title">Select a region</string>
+    <string name="notif_text">Drag over the area you want, then choose an action</string>
+
+    <!-- The bar is icon-only; these are the content descriptions and tooltips. -->
+    <string name="action_select_all">Select the whole screen</string>
+    <string name="action_previous">Back to the previous selection</string>
+    <string name="action_clear">Clear the selection</string>
+    <string name="action_copy">Copy to clipboard</string>
+    <string name="action_save">Save to device</string>
+    <string name="action_both">Copy and save</string>
+    <string name="action_cancel">Cancel</string>
+
+    <string name="denied">Screen capture consent denied</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="offscreen">Selection was off screen</string>
+    <string name="need_overlay">Grant \"draw over other apps\" first</string>
+    <string name="no_frame">Could not grab a frame from the screen</string>
+    <string name="capture_blocked">Screen capture was stopped before a frame arrived</string>
+    <string name="single_app_capture">Single-app capture is not supported — share the entire screen</string>
+    <string name="protected_content">That screen is protected and cannot be captured</string>
+    <string name="restricted_setting">Blocked — allow restricted settings for ScreenClip</string>
+    <string name="too_fast">Too fast — try again</string>
+    <string name="rotated">Screen rotated — capture cancelled</string>
+    <string name="timed_out">Capture timed out</string>
+
+    <string name="copied">Copied %1$d × %2$d to the clipboard</string>
+    <string name="saved">Saved %1$d × %2$d to %3$s</string>
+    <string name="copied_and_saved">Copied %1$d × %2$d and saved to %3$s</string>
+    <string name="save_failed">Could not save to the gallery</string>
+</resources>

@@ -1,0 +1,13 @@
+*.iml
+.gradle/
+/local.properties
+# Signing material. Never commit either of these.
+/keystore.jks
+/keystore.properties
+/.idea/
+.DS_Store
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
